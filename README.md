@@ -21,6 +21,20 @@ The system is modeled as a Moore FSM with the following states:
 - Modular and reusable FSM design.
 - Outputs are fully determined by the current state.
 
+## Diagrams
+
+### RTL Diagram
+
+Below is the RTL (Register Transfer Level) diagram representing the design structure.
+
+![image](https://github.com/user-attachments/assets/c6612b4b-9ebb-4c34-b2ce-7430c3a84a08)
+
+### FSM State Diagram
+
+The FSM uses the following states to track the pattern sequence:
+
+![image](https://github.com/user-attachments/assets/8850690e-1c12-44dc-9187-7ddc8f111e0c)
+
 ## Design Details
 
 ### State Diagram
@@ -57,7 +71,6 @@ The lights (`la`, `lb`, `lc`, `ra`, `rb`, `rc`) are controlled based on the curr
 - `lightfsm.sv`: Contains the SystemVerilog implementation of the FSM.
 - `tb_lightfsm.sv`: Testbench for simulating and verifying the FSM behavior.
 - `README.md`: Project documentation.
-- `state_diagram.png`: Visual representation of the FSM.
 
 ## Tools Used
 
@@ -67,7 +80,11 @@ The lights (`la`, `lb`, `lc`, `ra`, `rb`, `rc`) are controlled based on the curr
 
 ## Getting Started
 
-Clone the repository:
+### Prerequisites
+
+You need a Verilog simulator (such as ModelSim, Xilinx Vivado, or Synopsys VCS) to compile and simulate this project.
+
+### Clone the repository:
    ```bash
    git clone "https://github.com/MuhammadAun-gif/Light-FSM"
 
