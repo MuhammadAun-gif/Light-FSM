@@ -66,11 +66,12 @@ The lights (`la`, `lb`, `lc`, `ra`, `rb`, `rc`) are controlled based on the curr
   - `S5`: `ra` and `rb` on
   - `S6`: `ra`, `rb`, and `rc` on
 
-## File Structure
+## Files
 
 - `lightfsm.sv`: Contains the SystemVerilog implementation of the FSM.
 - `tb_lightfsm.sv`: Testbench for simulating and verifying the FSM behavior.
 - `README.md`: Project documentation.
+- `lightfsm.tv`: Contains test vectors to be used in the Testbench.
 
 ## Tools Used
 
